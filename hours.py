@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
 def add_hours(d1, d2):
     hm1 = d1.split("h")
     h1 = int(hm1[0])
@@ -30,8 +23,14 @@ def add_hours(d1, d2):
 #print(add_hours("1h36","2h34"))
 
 def main():
-    hours = ["7h45","8h25","6h00"] # à remplir sur ce format hours = ["1h30","2h54"]
     
+    #hours = ["7h45","8h25","6h00"] # à remplir sur ce format hours = ["1h30","2h54"]
+    hours = []
+    inp = ""
+    while inp != "q":
+        inp = input("heure sur ce format 0h00 (ex : 7h08) ; \nq pour arreter  \n")
+        hours.append(inp)
+    hours.pop()
     res = "0h0"
     for h in hours:
         res = add_hours(res,h)

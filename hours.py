@@ -28,7 +28,7 @@ def main():
     hours = []
     inp = ""
     while inp != "q":
-        inp = input("heure sur ce format 0h00 (ex : 7h08) ; \nq pour arreter  \n")
+        inp = input("heure sur ce format 0h00 (ex : 7h08 ou 10h00) ; \nq pour arreter  \n")
         hours.append(inp)
     hours.pop()
     res = "0h0"

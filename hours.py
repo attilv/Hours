@@ -35,6 +35,6 @@ def main():
     for h in hours:
         res = add_hours(res,h)
         
-    print(res)
+    print("\nIl a travaillé "+res)
     
 main()
